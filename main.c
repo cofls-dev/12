@@ -54,6 +54,7 @@ int main(int argc, char *argv[])
 	   printf("coin : %i\n", coinResult);
 	   
 	   // 2-4. change turn, shark move
+	   
 	   cnt ++;
     } while(cnt < 5);
     
