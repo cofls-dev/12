@@ -7,6 +7,9 @@
 
 int main(int argc, char *argv[]) 
 {
+	int cnt;
+	int pos;
+	int coinResult;
 	
 	srand( (unsigned) (time(NULL)) );
 	
