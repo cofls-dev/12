@@ -1,11 +1,11 @@
 #if 0
-int board_initBoard(void);
-int board_getBoardStatus(int pos);
 int board_getSharkPosition(void);
 int board_stepShark(void);
-int board_getBoardCoin(int pos);
-void board_printBoardStatus(void);
 #endif
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "board.h"
 
 #define N_BOARD           20
 #define BOARDSTATUS_OK    1
@@ -33,6 +33,8 @@ void board_printBoardStatus(void)
 	printf("|\n");
 	printf("--------------------------\n");
 	
+	
+	
 }
 
 int board_getBoardStatus(int pos)
@@ -53,7 +55,7 @@ void board_initBoard(void)
 	//initialize arrays
     for (i=0;i<N_BOARD;i++)
    {
-	board status[i] = BOARDSTATUS_OK;
+	board_status[i] = BOARDSTATUS_OK;
 	board_coin[i] = 0;
    }
    
